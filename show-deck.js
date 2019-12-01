@@ -106,7 +106,7 @@ function ShowDeckInContainer(container) {
     return decklist_content = Object.keys(decklist.cards).map(findCard);
   }
   function renderCardLink(card) {
-    return '<a href="https://netrunnerdb.com/en/card/'+card.code+'" target="_blank" data-code="'+card.code+'">'+card.title+'</a><img class="card-img" src="' + (card.image_url ? card.image_url : (`https://netrunnerdb.com/card_image/${card.code}.png`)) + '">';
+    return '<a class="card-name" href="https://netrunnerdb.com/en/card/'+card.code+'" target="_blank" data-code="'+card.code+'">'+card.title+'</a><img class="card-img" src="' + (card.image_url ? card.image_url : (`https://netrunnerdb.com/card_image/${card.code}.png`)) + '">';
   }
   function renderCardInfluenceCost(card, quantity) {
     var html = '', faction = db.factions[card.faction_code];
