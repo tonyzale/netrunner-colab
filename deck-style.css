@@ -1,0 +1,9 @@
+.card-img {
+  display: none;
+  position: absolute;
+  width: 210px;
+  height: 293px;
+}
+.card-name:hover + .card-img {
+  display: inline;
+}
